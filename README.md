@@ -1,10 +1,6 @@
-# Document-Optical-Charcter-Recognition
-
-An OCR-based receipt processing system using PaddleOCR and OpenCV that extracts bill details, dates, times, and purchased items from receipt images and exports structured JSON output.
-
 # Optical Character Recognition (OCR) for Automated Receipt Processing
 
-## Overview
+An OCR-based receipt processing system using PaddleOCR and OpenCV that extracts bill details, dates, times, and purchased items from receipt images and exports structured JSON output.
 
 This project is an OCR-based document processing system that automatically extracts and structures information from receipt images. The system leverages PaddleOCR and OpenCV to recognize text from scanned receipts and applies pattern-matching techniques to identify key information such as bill numbers, dates, times, and purchased items.
 
