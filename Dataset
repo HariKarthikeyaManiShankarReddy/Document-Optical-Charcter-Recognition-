@@ -1,4 +1,20 @@
-The SROIE Dataset (Scanned Receipts OCR and Information Extraction) is one of the most widely used benchmark datasets for OCR and document information extraction tasks.
-It was introduced as part of the ICDAR 2019 Robust Reading Challenge on Scanned Receipts OCR and Information Extraction.
-The dataset contains approximately 1,000 real-world scanned receipt images collected from shops, restaurants, and retail stores.
-These receipts vary in layout, font style, image quality, and scanning conditions, making the dataset suitable for evaluating OCR and document understanding systems.
+# SROIE 2019 Dataset Description
+
+This repository uses the **ICDAR 2019 SROIE (Scanned Receipts OCR and Information Extraction)** dataset. The dataset is a benchmark commonly used for document image understanding, layout analysis, optical character recognition (OCR), and structured information extraction from unstructured document text.
+
+## Dataset Overview
+* **Domain:** Document Intelligence / Document Text Processing
+* **Task:** Text Detection, Optical Character Recognition (OCR), and Information Extraction (IE) from scanned receipts.
+* **Format:** Raw receipt images matching with token-level bounding boxes (`.txt`) and clean entity labels (`.txt`).
+* **Language:** English
+
+---
+
+## Data Structure & Contents
+
+The original dataset is typically split into training and evaluation sets. For every individual receipt sample, three parallel files are available:
+
+1. **Scanned Images (`.jpg`):** High-resolution scans of physical retail receipts featuring diverse fonts, text alignments, layout deformations, and OCR noise conditions.
+2. **OCR Transcriptions (`.txt`):** Text files containing line-by-line bounding box coordinates and corresponding textual characters mapped out by OCR detectors. Each row follows the shape:
+   ```text
+   x1,y1,x2,y2,x3,y3,x4,y4,text_content
